@@ -1,0 +1,24 @@
+[package]
+license = "GPL-3.0-or-later"
+name = "breeze-platform"
+version = "0.1.0"
+edition = "2021"
+description = "Breeze per-OS backends: process suspend/monitor, child reaping, PTY, sleep (macOS/Linux/Windows)"
+
+[dependencies]
+breeze-core = { path = "../breeze-core" }
+breeze-vt = { path = "../breeze-vt" }
+portable-pty = "0.8"
+serde_json = "1"
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.59", features = [
+    "Win32_Foundation",
+    "Win32_System_Threading",
+    "Win32_System_ProcessStatus",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_Power",
+] }

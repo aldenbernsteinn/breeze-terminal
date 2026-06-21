@@ -1,0 +1,5 @@
+[workspace]
+resolver = "2"
+members = ["crates/breeze-core", "crates/breeze-platform", "crates/breeze-vt", "crates/breeze-ui"]
+
+# Breeze — cross-platform terminal.

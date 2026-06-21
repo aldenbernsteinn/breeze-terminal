@@ -1,0 +1,9 @@
+[package]
+license = "GPL-3.0-or-later"
+name = "breeze-vt"
+version = "0.1.0"
+edition = "2021"
+description = "Breeze terminal emulation: VT parsing + grid model (CPU only, no GPU)"
+
+[dependencies]
+alacritty_terminal = "0.26"

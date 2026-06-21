@@ -1,0 +1,19 @@
+[package]
+license = "GPL-3.0-or-later"
+name = "breeze-ui"
+version = "0.1.0"
+edition = "2021"
+description = "Breeze cross-platform UI shell: windowing/tabs/splits/input/CPU text render + neutral no-GPU frost chrome"
+
+[[bin]]
+name = "breeze"
+path = "src/main.rs"
+
+[dependencies]
+breeze-core = { path = "../breeze-core" }
+breeze-platform = { path = "../breeze-platform" }
+breeze-vt = { path = "../breeze-vt" }
+winit = "0.30"
+softbuffer = "0.4"
+cosmic-text = "0.14"
+arboard = "3"

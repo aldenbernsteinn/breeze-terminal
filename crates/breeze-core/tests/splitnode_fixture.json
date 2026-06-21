@@ -1,0 +1,1 @@
+{"second":{"ratio":0.5,"type":"split","first":{"paneID":{"id":2},"type":"leaf"},"second":{"paneID":{"id":3},"type":"leaf"},"direction":"horizontal"},"first":{"type":"leaf","paneID":{"id":1}},"type":"split","direction":"vertical","ratio":0.6}
